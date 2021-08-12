@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'newnotesview.dart';
 import 'notesview.dart';
 
 void main() {
@@ -56,7 +57,7 @@ class MyButton extends StatelessWidget {
       Navigator.push(
           context,
           MaterialPageRoute(builder: (context) {
-            return NotesView();
+            return NewNotesView();
           })
       );
     }, child: Text("Login"));

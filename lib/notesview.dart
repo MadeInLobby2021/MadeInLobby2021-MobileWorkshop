@@ -14,10 +14,21 @@ class NotesView extends StatelessWidget {
     Note("7 note", "7 content"),
   ];
 
+  void addTestNote() {
+    notes.add(Note("Test title", "Test content"));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Notes"),),
+      appBar: AppBar(
+        title: Text("Notes"),
+        actions: [
+          IconButton(
+              onPressed: addTestNote,
+              icon: Icon(Icons.add))
+        ],
+      ),
       body: ListView.builder(
         itemCount: notes.length,
         itemBuilder: (context, index) {
