@@ -56,7 +56,7 @@ class MyButton extends StatelessWidget {
       Navigator.push(
           context,
           MaterialPageRoute(builder: (context) {
-            return NotesView();
+            return NewNotesView();
           })
       );
     }, child: Text("Login"));
