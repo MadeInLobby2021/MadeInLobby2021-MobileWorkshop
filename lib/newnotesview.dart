@@ -48,6 +48,7 @@ class _NewNotesViewState extends State<NewNotesView> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Notes"),
+          leading: Container()
         ),
         body: FutureBuilder<List<Note>>(
           future: notes,
