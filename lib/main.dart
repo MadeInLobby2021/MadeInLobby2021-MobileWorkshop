@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'newnotesview.dart';
 import 'notesview.dart';
 
 void main() {
